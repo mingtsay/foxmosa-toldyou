@@ -6,8 +6,8 @@
         image: [
           'http://orinx.github.io/foxmosa-toldyou/img/foxmosa-reddino.png',
         ],
-        height: 498, // image height
-        width: 436, // image width
+        height: 342, // image height
+        width: 300, // image width
         effect: 'default', // options: default, fast, slow, veryslow, jump, sneaky
         popup_effect: 'fade', // options: default, fade, slide, zoom
         popup_radius: '8px', // popup radius
@@ -15,9 +15,9 @@
         popup_bgcolor: 'beige', // popup background color
         readmore_color: 'brown', // popup font color
         comein_position: 80, // show kp after scroll more than percent of page height
-        default_text: '你好，我是小莎', // the words show in popup before loading done
+        default_text: '你好，我是小莎！ <br /> 底知道 MozTW 現在正打算籌劃一個 <a href="https://etherpad.mozilla.org/moztw-firefox-10-year-party" target="_blank">Firefox 10 週年慶祝 Party</a> 嗎？快點來看看吧 >q<', // the words show in popup before loading done
         enter_from: 'left', // options: left, right
-        enter_distance: -180 // the distance to window side
+        enter_distance: -100 // the distance to window side
 
         //left: -130, // remove this option after ver2.0
     }, options);
@@ -131,7 +131,7 @@
       arrow_pos = 'right';
     else
       arrow_pos = 'left';
-    var object = '<div id="kp_come_container" style="width:'+settings.width+'px; height:'+settings.height+'px; '+settings.enter_from+':-'+settings.width+'px; bottom:0;"><img src="'+img_src+'" style="width:'+settings.width+'px; height:'+settings.height+'px;"><div id="kp_popup" style="'+settings.enter_from+':'+((settings.width)*0.8)+'px;top:'+(settings.height*0.28)+'px;-webkit-border-radius:'+settings.popup_radius+';-moz-border-radius:'+settings.popup_radius+';border-radius:'+settings.popup_radius+';background-color:'+settings.popup_bgcolor+'"><div id="kp_says" style="color:'+settings.popup_color+'">'+settings.default_text+'</div><div id="kp_popup_arrow_shadow" style="border-'+arrow_pos+': 40px solid rgba(0,0,0,.1);'+settings.enter_from+': -40px;"></div><div id="kp_popup_arrow" style="border-'+arrow_pos+': 42px solid '+settings.popup_bgcolor+';'+settings.enter_from+': -40px;"></div><div id="kp_close_popup">X</div></div></div>';
+    var object = '<div id="kp_come_container" style="width:'+settings.width+'px; height:'+settings.height+'px; '+settings.enter_from+':-'+settings.width+'px; bottom:0;"><img src="'+img_src+'" style="width:'+settings.width+'px; height:'+settings.height+'px;"><div id="kp_popup" style="'+settings.enter_from+':'+((settings.width)*1.1)+'px;top:'+(settings.height*0.22)+'px;-webkit-border-radius:'+settings.popup_radius+';-moz-border-radius:'+settings.popup_radius+';border-radius:'+settings.popup_radius+';background-color:'+settings.popup_bgcolor+'"><div id="kp_says" style="color:'+settings.popup_color+'">'+settings.default_text+'</div><div id="kp_popup_arrow_shadow" style="border-'+arrow_pos+': 40px solid rgba(0,0,0,.1);'+settings.enter_from+': -40px;"></div><div id="kp_popup_arrow" style="border-'+arrow_pos+': 42px solid '+settings.popup_bgcolor+';'+settings.enter_from+': -40px;"></div><div id="kp_close_popup">X</div></div></div>';
     $('body').append(object);
     loadData(settings);
   }
