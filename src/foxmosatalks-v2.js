@@ -1,6 +1,6 @@
 (function($) {
 
-  $.kptalks = function(options) {
+  $.foxmosatalks = function(options) {
 
     var settings = $.extend({
         image: [
