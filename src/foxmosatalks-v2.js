@@ -17,7 +17,7 @@
         comein_position: 80, // show kp after scroll more than percent of page height
         default_text: '你好，我是小莎', // the words show in popup before loading done
         enter_from: 'left', // options: left, right
-        enter_distance: 0 // the distance to window side
+        enter_distance: -120 // the distance to window side
 
         //left: -130, // remove this option after ver2.0
     }, options);
