@@ -6,8 +6,8 @@
         image: [
           'http://orinx.github.io/foxmosa-toldyou/img/foxmosa-reddino.png',
         ],
-        height: 450, // image height
-        width: 466, // image width
+        height: 498, // image height
+        width: 436, // image width
         effect: 'default', // options: default, fast, slow, veryslow, jump, sneaky
         popup_effect: 'fade', // options: default, fade, slide, zoom
         popup_radius: '8px', // popup radius
@@ -17,7 +17,7 @@
         comein_position: 80, // show kp after scroll more than percent of page height
         default_text: '你好，我是小莎', // the words show in popup before loading done
         enter_from: 'left', // options: left, right
-        enter_distance: -120 // the distance to window side
+        enter_distance: -180 // the distance to window side
 
         //left: -130, // remove this option after ver2.0
     }, options);
