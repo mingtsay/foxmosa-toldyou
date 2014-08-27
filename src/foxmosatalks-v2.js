@@ -5,6 +5,8 @@
     var settings = $.extend({
         image: [
           'http://orinx.github.io/foxmosa-toldyou/img/foxmosa-reddino.png',
+	  'http://orinx.github.io/foxmosa-toldyou/img/foxmosa-hand.png',
+	  'http://orinx.github.io/foxmosa-toldyou/img/foxmosa-gift.png',
         ],
         height: 342, // image height
         width: 300, // image width
